@@ -1,0 +1,59 @@
+# DESCRIPTION
+
+This is a serializer engine that allows you to turn Perl data structures into
+[Data::Dumper](https://metacpan.org/pod/Data%3A%3ADumper) output and vice-versa.
+
+Since version 0.300006 of [Dancer2](https://metacpan.org/pod/Dancer2), the Dumper serializer is no longer
+shipped as part of the core framework, but is available as its own CPAN
+distribution, `Dancer2-Serializer-Dumper`. Install this distribution if you
+want to use it, and add its dependencies to your application.
+
+# SECURITY
+
+The `deserialize` method evaluates the content as Perl code, inside a
+[Safe](https://metacpan.org/pod/Safe) compartment. [Safe](https://metacpan.org/pod/Safe) is not a real security sandbox, so this
+serializer must never be used to deserialize untrusted input. [Dancer2](https://metacpan.org/pod/Dancer2)'s
+[Dancer2::Serializer::Mutable](https://metacpan.org/pod/Dancer2%3A%3ASerializer%3A%3AMutable) serializer therefore leaves the Dumper
+serializer disabled by default: if you really want to opt in to it, you must
+set `enable_dumper` in your Mutable serializer configuration, and you must
+have this distribution installed.
+
+# METHODS
+
+Returns 'text/x-data-dumper'
+
+This is an helper available to transform a [Data::Dumper](https://metacpan.org/pod/Data%3A%3ADumper) output to a Perl
+data structures.
+
+This is an helper available to transform a Perl data structures to a
+[Data::Dumper](https://metacpan.org/pod/Data%3A%3ADumper) output.
+
+Calling this function will **not** trigger the serialization's hooks.
+
+Serializes a Perl data structure into a Dumper string.
+
+Deserialize a Dumper string into a Perl data structure.
+
+# POD ERRORS
+
+Hey! **The above document had some coding errors, which are explained below:**
+
+- Around line 25:
+
+    Unknown directive: =attr
+
+- Around line 29:
+
+    Unknown directive: =func
+
+- Around line 34:
+
+    Unknown directive: =func
+
+- Around line 41:
+
+    Unknown directive: =method
+
+- Around line 45:
+
+    Unknown directive: =method

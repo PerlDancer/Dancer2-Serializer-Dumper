@@ -1,0 +1,11 @@
+{{$NEXT}}
+
+    [ ENHANCEMENTS ]
+    * Initial release of the Dancer2 Dumper serializer as a standalone
+      distribution, split out from Dancer2 core.
+
+0.001  2021-01-26
+
+    [ ENHANCEMENTS ]
+    * Initial release as a standalone distribution. The Dumper serializer
+      was previously shipped as part of Dancer2 core.
