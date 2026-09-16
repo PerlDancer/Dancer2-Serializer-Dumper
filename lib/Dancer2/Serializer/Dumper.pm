@@ -1,6 +1,7 @@
 # ABSTRACT: Serializer for handling Dumper data
 
 package Dancer2::Serializer::Dumper;
+# VERSION
 
 use Moo;
 use Carp 'croak';
