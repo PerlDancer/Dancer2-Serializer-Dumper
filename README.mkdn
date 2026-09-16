@@ -3,7 +3,7 @@
 This is a serializer engine that allows you to turn Perl data structures into
 [Data::Dumper](https://metacpan.org/pod/Data%3A%3ADumper) output and vice-versa.
 
-Since version 0.300006 of [Dancer2](https://metacpan.org/pod/Dancer2), the Dumper serializer is no longer
+Since version 2.2.0 of [Dancer2](https://metacpan.org/pod/Dancer2), the Dumper serializer is no longer
 shipped as part of the core framework, but is available as its own CPAN
 distribution, `Dancer2-Serializer-Dumper`. Install this distribution if you
 want to use it, and add its dependencies to your application.

@@ -45,7 +45,7 @@ __END__
 This is a serializer engine that allows you to turn Perl data structures into
 L<Data::Dumper> output and vice-versa.
 
-Since version 0.300006 of L<Dancer2>, the Dumper serializer is no longer
+Since version 2.2.0 of L<Dancer2>, the Dumper serializer is no longer
 shipped as part of the core framework, but is available as its own CPAN
 distribution, C<Dancer2-Serializer-Dumper>. Install this distribution if you
 want to use it, and add its dependencies to your application.
